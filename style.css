@@ -1,0 +1,37 @@
+button {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.4rem;
+  box-shadow: 7px 0px 5px 0px;
+}
+button:hover {
+  opacity: 0.8;
+}
+#display {
+  height: 3rem;
+  width: 14.5rem;
+  margin-left: 0.4rem;
+  border: 1px solid black;
+  background-color: rgb(180, 174, 174);
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  padding-left: 0.1rem;
+  padding-right: 0.5rem;
+  text-align: end;
+}
+#calculator {
+  background-color: rgba(87, 80, 80, 0.925);
+  width: max-content;
+  padding-top: 1rem;
+  border: 5px solid black;
+  box-shadow: 10px 0px 20px 0px;
+  border-radius: 8px;
+}
+#container {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+}
+.reset {
+  background-color: rgba(231, 59, 6, 0.904);
+}

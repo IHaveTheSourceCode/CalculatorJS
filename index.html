@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="display"></div>
+            <div id="row1">
+                <button class="numBtn" onclick = printNumbers(7)>7</button>
+                <button class="numBtn" onclick = printNumbers(8)>8</button>
+                <button class="numBtn" onclick = printNumbers(9)>9</button>
+                <button class="exp" onclick = getExpression("plus")>+</button>
+            </div>
+            <div id="row2">
+                <button class="numBtn" onclick = printNumbers(4)>4</button>
+                <button class="numBtn" onclick = printNumbers(5)>5</button>
+                <button class="numBtn" onclick = printNumbers(6)>6</button>
+                <button class="exp" onclick = getExpression("minus")>-</button>
+            </div>
+            <div id="row3">
+                <button class="numBtn" onclick = printNumbers(1)>1</button>
+                <button class="numBtn" onclick = printNumbers(2)>2</button>
+                <button class="numBtn" onclick = printNumbers(3)>3</button>
+                <button class="exp" onclick = getExpression("star")>*</button>
+            </div>
+            <div id="row4">
+                <button class="exp" onclick = getExpression("slash")>/</button>
+                <button class="numBtn" onclick = printNumbers(0)>0</button>
+                <button onclick = ev()>=</button>
+                <button class="reset">AC</button>
+            </div>
+        </div>
+    </div>
+</body>
