@@ -1,3 +1,6 @@
+body {
+  background-image: url(/images/background-dark.jpg);
+}
 .container {
   display: grid;
   justify-content: center;
@@ -5,7 +8,7 @@
 }
 
 .calculator {
-  background-color: rgba(87, 80, 80, 0.925);
+  background-color: rgba(87, 80, 80, 1);
   padding-top: 1rem;
   border: 5px solid black;
   box-shadow: 10px 0px 20px 0px;
@@ -14,7 +17,7 @@
 }
 
 .calculator > div:nth-child(5) > button:nth-child(4) {
-  background-color: rgba(231, 60, 6, 0.904);
+  background-color: rgba(230, 90, 47, 0.904);
 }
 
 .calculator div:first-child {
@@ -28,6 +31,7 @@
   padding-left: 0.1rem;
   padding-right: 0.5rem;
   text-align: end;
+  font-family: "Orbitron", sans-serif;
 }
 
 button {
@@ -35,7 +39,9 @@ button {
   width: 3rem;
   margin: 0.4rem;
   box-shadow: 4px 4px 5px 0px;
-  transition: ;
+  border: 1px solid black;
+  font-size: 1.05rem;
+  font-weight: bold;
 }
 
 button:hover {
