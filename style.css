@@ -1,13 +1,13 @@
 body {
   background-image: url(/images/background-dark.jpg);
 }
-.container {
+body > div {
   display: grid;
   justify-content: center;
   margin-top: 200px;
 }
 
-.calculator {
+body > div > div {
   background-color: rgba(87, 80, 80, 1);
   padding-top: 1rem;
   border: 5px solid black;
@@ -16,11 +16,11 @@ body {
   padding-bottom: 5px;
 }
 
-.calculator > div:nth-child(5) > button:nth-child(4) {
+body > div > div > div:nth-child(5) > button:nth-child(4) {
   background-color: rgba(230, 90, 47, 0.904);
 }
 
-.calculator div:first-child {
+body > div > div > div:first-child {
   height: 3rem;
   width: 14.5rem;
   margin-left: 0.4rem;
