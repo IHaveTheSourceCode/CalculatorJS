@@ -27,13 +27,13 @@ function fill(button) {
 
   // fills display with numbers until it's full
   else if (parseInt(button.textContent)) {
-    if (display.textContent.length > 8) return;
+    if (display.textContent.length > 7) return;
     else {
-        display.append(button.textContent);
-        num1 += String(button.textContent);
+      display.append(button.textContent);
+      num1 += button.textContent;
+    }
   }
 }
-
 // prints ERROR if number won't fit in display
 
 // calculates the outcome and prints it on display
@@ -43,4 +43,4 @@ buttons.forEach((button) => {
   button.addEventListener("click", function () {
     fill(button);
   });
-})
+});
