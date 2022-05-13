@@ -5,7 +5,7 @@ let expression;
 const buttons = document.querySelectorAll("button");
 const display = document.querySelector(".display");
 
-// returns calculated result
+// calculated the outcome
 function calculate() {
   switch (expression) {
     case "+":
@@ -77,9 +77,6 @@ function fill(button) {
   }
 }
 // prints ERROR if number won't fit in display
-
-// calculates the outcome and prints it on display
-// replaces num1 with calculated number
 
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
