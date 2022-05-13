@@ -7,7 +7,6 @@ const display = document.querySelector(".display");
 
 // returns calculated result
 function calculate() {
-  let num1;
   switch (expression) {
     case "+":
       return +num1 + +num2;
@@ -31,7 +30,7 @@ function fill(button) {
   else if (button.textContent == "AC") {
     display.textContent = "";
     num1 = "";
-    num2 = 0;
+    num2 = "";
   }
 
   // equals button
@@ -39,10 +38,10 @@ function fill(button) {
   // display.textContent = num1
   else if (button.textContent == "=") {
     if (expression == undefined) {
-      display.textContent = num1;
+      return;
     } else {
       display.textContent = calculate();
-      num2 = num1;
+      num2 = calculate();
       num1 = "";
     }
   }
@@ -53,11 +52,16 @@ function fill(button) {
   // if num1 is not a number then change expression only
   else if (isNaN(parseInt(button.textContent))) {
     expression = button.textContent;
-    if (parseInt(num1) != NaN && parseInt(num2) != NaN) {
-      display.textContent == calculate();
-      alert("hi");
-    } else if (parseInt(num1) != NaN) {
-      alert("bye");
+    // if both numbers are present then calculate()
+    if (!isNaN(num1) && !isNaN(num2)) {
+      display.textContent = calculate();
+      num2 = calculate();
+      num1 = "";
+    }
+    // when there's only one number
+    // arrange num1 value to num2 and clear display
+    else {
+      display.textContent = "";
       num2 = num1;
       num1 = "";
     }
